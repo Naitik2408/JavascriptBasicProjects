@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.center{
+    text-align: center;
+    padding: 20px;
+}
+.center h1{
+    font-size: 50px;
+}
+.center .number{
+    font-size: 50px;
+}
+.center .buttons{
+    font-size: 20px;
+    margin-top: 20px;
+}
+.center .buttons span{
+    background-color: gray;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0 10px;
+}

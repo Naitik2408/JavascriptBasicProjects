@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+section div{
+    background-color: rgba(47, 47, 47, 1);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}

@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: rgb(241, 245, 248);
+    --secondary-color:rgb(247, 247, 247);
+    --primary-text-color:rgb(0, 0, 16);
+    --secondary-text-color:rgb(96, 182, 224);
+    --tertiary-text-color:rgb(89, 89, 89);
+    --ff-primary: "Roboto", sans-serif;
+    --ff-secondary: "Open Sans", sans-serif;
+    --box-shadow: rgba(211, 211, 211, 0.731);
+}
+
+.darktheme{
+    --primary-color: rgb(11, 17, 32);
+    --secondary-color:rgb(30, 41, 59);
+    --primary-text-color:rgb(235, 235, 235);
+    --secondary-text-color:rgb(96, 182, 224);
+    --tertiary-text-color:rgb(234, 234, 234);
+    --ff-primary: "Roboto", sans-serif;
+    --ff-secondary: "Open Sans", sans-serif;
+    --box-shadow: rgba(30, 41, 59, 0.459);
+
+}
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: var(--primary-color);
+}
+#themButton{
+    position: absolute;
+    top: 0.7rem;
+    right: 3rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+#themButton i{
+    color: var(--tertiary-text-color);
+}
+main #title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--ff-primary);
+}
+main #title h1{
+    font-size: 2.5rem;
+    color: var(--primary-text-color);
+}
+main #title .underline{
+    width: 3rem;
+    height: 0.2rem;
+    background-color: var(--secondary-text-color);
+}
+main #container{
+    width: 50%;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+    box-shadow: 1px 1px 30px 20px var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--secondary-color);
+}
+main #image_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 1.4rem;
+}
+main #image_section i{
+    position: absolute;
+    top: 2px;
+    left: 0;
+    font-size: 1.3rem;
+    background-color: var(--secondary-text-color);
+    padding: 10px;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    /* color: white; */
+    color: white;
+}
+main #image_section img{
+    width: 9rem;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+main #auth_name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main #auth_name h1{
+    font-size: 1.1rem;
+    font-family: var(--ff-primary);
+    color: var(--primary-text-color);
+    margin-bottom: 0.1rem;
+}
+main #auth_name h2{
+    font-size: 0.8rem;
+    font-family: var(--ff-secondary);
+    color: var(--secondary-text-color);
+    margin-bottom: 1rem;
+}
+main #container p{
+    font-family: var(--ff-secondary);
+    font-size: 0.8rem;
+    color: var(--tertiary-text-color);
+    width: 80%;
+    margin-bottom: 2rem;
+    color: var(--tertiary-text-color);
+}
+main #next_previous i{
+    margin: 0 0.9rem;
+    cursor: pointer;
+    color: var(--primary-text-color);
+    margin-bottom: 1rem;
+}
+main #suprise_me{
+    font-family: var(--ff-secondary);
+    border: 1.8px solid var(--secondary-text-color);
+    border-radius: 4px;
+    padding: 5px 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: var(--tertiary-text-color);
+}
